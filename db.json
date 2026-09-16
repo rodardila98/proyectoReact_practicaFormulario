@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    {
+      "nombre": "R",
+      "apellido": "A",
+      "documento": "123",
+      "edad": "1233",
+      "id": "05zV6alvrlQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
