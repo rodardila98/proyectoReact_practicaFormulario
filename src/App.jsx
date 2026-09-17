@@ -149,6 +149,10 @@ function App() {
       <button onClick={actualizarUsuario} disabled={!idEditando}>
         Actualizar
       </button>
+      
+      <button onClick={consultarUsuario}>
+        Obtener usuarios
+      </button>
 
       <h3>{mensaje}</h3>
       <h2>Total usuarios: {usuarios.length}</h2>
