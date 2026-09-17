@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
 
@@ -10,6 +10,12 @@ function App() {
   const [usuarios, setUsuarios] = useState([]);
   const [mensaje, setMensaje] = useState("");
   const [idEditando, setIdEditando] = useState(null);
+
+  useEffect( () =>{
+
+    consultarUsuario();
+
+  }, [])
 
   async function eliminarUsuario(idUsuario){
 
