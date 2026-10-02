@@ -19,7 +19,7 @@ function App() {
 
   async function eliminarUsuario(idUsuario){
 
-      let response = await fetch(`http://localhost:3001/usuarios/${idUsuario}`,{
+      let response = await fetch(`http://localhost:3000/usuarios/${idUsuario}`,{
         method: "DELETE"
       });
 
@@ -50,7 +50,7 @@ function App() {
       edad: edad
     };
 
-    let response = await fetch(`http://localhost:3001/usuarios/${idEditando}`,{
+    let response = await fetch(`http://localhost:3000/usuarios/${idEditando}`,{
       method: "PATCH",
       headers:{
         "Content-Type": "application/json"
@@ -73,7 +73,7 @@ function App() {
 
   async function consultarUsuario(){
 
-    let response = await fetch("http://localhost:3001/usuarios")
+    let response = await fetch("http://localhost:3000/usuarios")
     let data = await response.json();
 
     await setUsuarios(data);
@@ -98,7 +98,7 @@ function App() {
     // Guardado local en Array
     //setUsuarios([...usuarios, nuevoUsuario]);
 
-    let response = await fetch("http://localhost:3001/usuarios",{
+    let response = await fetch("http://localhost:3000/usuarios",{
       method: "POST",
       headers:{
         "Content-Type": "application/json"
