@@ -51,7 +51,7 @@ function App() {
     };
 
     let response = await fetch(`http://localhost:3000/usuarios/${idEditando}`,{
-      method: "PATCH",
+      method: "PUT",
       headers:{
         "Content-Type": "application/json"
       },
